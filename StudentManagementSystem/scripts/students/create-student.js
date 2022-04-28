@@ -5,7 +5,7 @@
     const dataForm = document.querySelector('#data-form');
 
     function createStudentFromFormObj(dataObject) {
-                const student = new Student(dataObject.firstName, dataObject.lastname);
+                const student = new Student(dataObject.firstName, dataObject.surname);
         return student;
     }
 
@@ -23,7 +23,7 @@
         fetch('http://localhost:8080/student/', {
             
             method: 'POST', // request method
-            body: JSON.stringify(createStudentFromFormObj(formDataObject), ),
+            body: JSON.stringify(createStudentFromFormObj(formDataObject), console.log(formDataObject)),
             headers: {
                 'Content-type': 'application/json' // has json data in the body
             }

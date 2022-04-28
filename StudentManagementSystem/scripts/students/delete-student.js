@@ -11,7 +11,7 @@
             else throw new Error('Uh oh, something went wrong...');
         })
             .then(student => {
-                confirm = window.confirm("Are you sure you want to delete " + student.id + "?")
+                confirm = window.confirm("Are you sure you want to delete " + student.firstName + "?")
                 if (confirm) {
                     remove();
                 }
