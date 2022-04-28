@@ -20,7 +20,7 @@
         setStatus('PREPARING POST REQUEST');
         
         // this fetch request has options as the second parameter
-        fetch('http://localhost:8080/student/',console.log(formDataObject), {
+        fetch('http://localhost:8080/student/', {
             
             method: 'POST', // request method
             body: JSON.stringify(createStudentFromFormObj(formDataObject), ),

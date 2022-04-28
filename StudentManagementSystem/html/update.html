@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Update Student</title>
 
     <link rel="stylesheet" href="../css/style.css">
 </head>
@@ -29,18 +29,39 @@
         </section>
         <main class="container">
             <div id="data-table">
-                
             </div>
-            <form id="data-form">
-                <!-- TODO -->
+            <h2>Update a student:</h2>
+            <!-- declare a form with form element -->
+            <form id="data-form" class="container">
+                <fieldset id="general-info">
+                    <legend>General information</legend>
+                    <!-- a legend describes a fieldset -->
 
-                <button type="submit">Submit</button>
+                    <!-- form inputs are created with the input element
+                         - each form input must have an associated label
+                         - the label should have a for attribute that has the same value as the input elements id attribute that we are targeting
+                         - input elements have a name attribute, when a form is submitted the data is submitted as key:value pairs where the key is the value of the 'name' attribute
+                         - each form input element can have a type, this applies default validation
+                         - to make an input required, specify the required attribute
+                    -->
+                    <label for="id">ID:</label>
+                    <input type="text" id="id" name="id"><br>
+                    
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName"><br>
+
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname"><br>
+                </fieldset>
+
+               <!-- HTML !-->
+               <button type="submit">Submit</button>
             </form>
         </main>
     </div>
 
     <footer>
-        <p><small>name here - Copyright &copy; 2022</small></p>
+        <p><small>Student Management System - 2022</small></p>
     </footer>
 
     <script src="../scripts/navbar.js"></script>
